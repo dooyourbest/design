@@ -49,40 +49,40 @@
 
     <div id="step-1" class="step" data-x="0" data-y="0" data-z="0"
          data-goto-prev="step-8" style="width:1080px">
-        <img style="width:960px;margin: auto" src="./src/1.png" alt="">
+        <img id="img0" style="width:960px;margin: auto"  alt="">
     </div>
 
     <div id="step-2" class="step" data-x="420"  style="width:1080px"data-y="-70" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
-        <img style="width: 960px;" src="./src/2.png" alt="">
+        <img id="img1" style="width: 960px;"  alt="">
     </div>
 
     <div id="step-3" class="step" data-x="700" data-y="350" data-z="-350" data-rotate-z="90" data-rotate-y="-90" data-rotate-order="zyx">
-        <img style="width: 960px;" src="./src/3.png" alt="">
+        <img id="img2" style="width: 960px;" src="./src/3.png" alt="">
     </div>
 
     <div id="step-4" class="step" data-x="422" data-y="780" data-z="-250" data-rotate-z="135" data-rotate-y="-135" data-rotate-order="zyx">
         
-        <img style="width: 960px;" src="./src/4.png" alt="">
+        <img id="img3" style="width: 960px;" src="./src/4.png" alt="">
     </div>
 
     <div id="step-5" class="step" data-x="0" data-y="702" data-z="0" data-rotate-z="180" data-rotate-y="-180" data-rotate-order="zyx">
-        <img style="width: 960px;" src="./src/5.png" alt="">
+        <img id="img4" style="width: 960px;" src="./src/5.png" alt="">
 
     </div>
 
     <div id="step-6" class="step" data-x="379" data-y="780" data-z="270" data-rotate-z="135" data-rotate-y="-225" data-rotate-order="zyx">
-        <img style="width: 960px;" src="./src/6.png" alt="">
+        <img id="img5" style="width: 960px;" src="./src/6.png" alt="">
 
     </div>
 
     <div id="step-7" class="step" data-x="700" data-y="350" data-z="350" data-rotate-z="90" data-rotate-y="-270" data-rotate-order="zyx">
-        <img style="width: 960px;" src="./src/7.png" alt="">
+        <img id="img6" style="width: 960px;" src="./src/7.png" alt="">
 
     </div>
 
     <div id="step-8" class="step" data-x="379" data-y="-70" data-z="270" data-rotate-z="45" data-rotate-y="-315" data-rotate-order="zyx"
          data-goto-next="step-1">
-        <img style="width: 960px;" src="./src/8.png" alt="">
+        <img id="img7" style="width: 960px;" src="./src/8.png" alt="">
 
     </div>
 </div>
@@ -91,7 +91,34 @@
 <div id="impress-help"></div>
 
 <script type="text/javascript" src="./js/impress.js"></script>
-<script>impress().init();</script>
+<script>
+impress().init();
+var src = new Array();
+var img = new Image();
+src.push('./src/1.png');
+src.push('./src/2.png');
+src.push('./src/3.png');
+src.push('./src/4.png');
+src.push('./src/5.png');
+src.push('./src/6.png');
+src.push('./src/7.png');
+src.push('./src/8.png');
+function preload(src, index) {
+  index = index || 0;
+  if(index >= 10) {
+    return false;
+  }
+  if (src && src.length > index) {
+    varimg = new Image();
+    img.onload = function() {
+        preload(src, index + 1);
+    }
+    img.src = src[index];
+    document.getElementById("img"+index).src=src[index]
+  }
+}
+preload(src);
+</script>
 
 </body>
 <style>
