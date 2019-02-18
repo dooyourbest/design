@@ -146,6 +146,16 @@ body{
 
 
 }
+.showalltop{
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background: white;
+    top:0px;
+    left: 0px;
+    z-index: 2;
+
+}
 .underline{
     border-bottom: 1px solid #333333;height:40px;
 }

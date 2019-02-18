@@ -18,6 +18,9 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     width: 100%;
     height: 40px;
 }
+body{
+    background: white;
+}
 .show-all{
     background: #F5F5F5;
     margin: 40px;
@@ -100,6 +103,7 @@ a:hover{
     }
 </style>
 <body>
+<div class="showalltop"></div>
     <div class="show-all">
             <div class="before-header"></div>
             <header>
@@ -127,6 +131,17 @@ a:hover{
     $(document).ready(function(){
         $("#showimg").fadeIn(2000)
     })
+    // $(window).scroll(function() {
+    //     var move = $(document).scrollTop()
+    //     if (move < 40) {
+    //         var h = 40 - move
+    //         var hei=148 - 2*move
+    //         $(".showalltop").css("height", h + "px")
+    //         $(".header-ul").css("margin-top", h + "px")
+    //         $("header").css("height",hei+"px")
+    //         // $(".before-header").css("height", h + "px")
+    //     }
+    // })
 </script>
 
 </html>

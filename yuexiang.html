@@ -95,8 +95,12 @@ a:hover{
     #show{
         display: none;
     }
+    body{
+        background: white;
+    }
 </style>
 <body>
+ <div class="showalltop"></div>
     <div class="show-all">
             <div class="before-header"></div>
             <header>
@@ -122,6 +126,15 @@ a:hover{
 <script>
     $(document).ready(function(){
         $("#show").fadeIn(2000)
+    })
+    $(window).scroll(function() {
+        var move = $(document).scrollTop()
+        if (move < 40) {
+            var h = 40 - move
+            $(".showalltop").css("height", h + "px")
+            $(".header-ul").css("margin-top", h + "px")
+            // $(".before-header").css("height", h + "px")
+        }
     })
 </script>
 </html>
