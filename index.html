@@ -8,55 +8,15 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<link rel="stylesheet" href="./all.css">
 <style>
 html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
-body{
-    background-color: #F5F5F5 ;
-    height: 100%;
-}
-.li-header{
-    width:56px;
-    height:14ppx;
-    font-family: zcoolwenyiti;
-    font-size: 14px;
-    float:left;
-    margin-left: 80px;
-    line-height: 48px;
-    position: relative;
-}
-.li-header-last{
-    width:56px;
-    height:1px;
-    background: #333333;
-    border: 0px;
-    /* line-height: 48px; */
-    margin-top: 24px;
-}
-.li-header-center{
-    width:119px;
-    height:48px;
-    font-family: zcoolwenyiti;
-    font-size: 48px;
-    float:left;
-    margin-left: 80px;
-    line-height: 48px;
-}
-header{
-    height:48px;
-    text-align: center;
-}
-.show-center{
-    /* width: 237px; */
-    padding: 0px;
-    height: 45px;
-    font-family: SourceSansPro-Regular;
-    font-size:36px;
-    margin:0 auto;
-    margin-top:100px;
-    text-align: center
 
-}
+
+
+
+
 .show-line{
     border:#979797 solid 1px;
     margin: 0 auto;
@@ -113,7 +73,7 @@ header{
     width:846px;
     margin: 0 auto;
     margin-top: 60px;
-    margin-top: -50px;    
+    margin-top: -50px;
 
 }
 .level-2-1-block{
@@ -122,7 +82,7 @@ header{
     text-align: center;
     float: left;
     display: none;
-    
+
 }
 .level-2-2-block{
     position: absolute;
@@ -138,7 +98,7 @@ header{
     margin:0 auto;
     margin-top:120px;
     width: 320px;
-    border: 1px solid #D8D8D8 
+    border: 1px solid #D8D8D8
 }
 .energy{
     width: 124px;
@@ -146,7 +106,7 @@ header{
     font-family: PingFangSC-Regular;
     color:#333333;
     font-size:28px;
-    margin: 0 auto;
+    margin: 0  auto;
     margin-top:18px;
 
 }
@@ -217,7 +177,7 @@ header{
     background-color: #ffffff;
     margin-top: 101px;
 
-    
+
 }
 
 span{
@@ -314,7 +274,7 @@ span{
     transform: scale(1.1);
 } */
 .note{
-   
+
 }
 .note-div{
     height: 28px;
@@ -333,7 +293,7 @@ span{
     display: block;
     float: left;
     margin-left: 23px;
-    
+
 }
 .poin-img{
     float: left;
@@ -358,7 +318,7 @@ span{
 a{
     color:black;
     text-decoration: none;
-    
+
 }
 a:hover{
     color: #ff9900 ;
@@ -368,24 +328,26 @@ a:hover{
     border-bottom: 2px solid #333333
 }
 </style>
-
-<body>
-    <div style="margin-top:40px;height: 60px;">
+<header >
+    <div class="header-top">
     </div>
-    <header >
-        <ul style="text-align: center;width:663px;margin: 0 auto">
-            <li class="li-header" style="margin: 0px">
+    <ul class="header-ul">
+
+        <div style="margin:0 auto;text-align: center;padding:0px;height: 48px;display: inline-block">
+            <li class=" li-header" style="margin-left: 0px;" >
                 <div class="li-header-last"></div>
             </li>
-            <li class="li-header"><a href="./yishang.html" target="blank">作品展示</a></li>
-            <li class="li-header-center"> <a href="./index.html">design</a></a></li>
-            <li class="li-header"><a href="./connect.html">联系方式</a></li>
-           
-            <li class="li-header" >
-                <div class="li-header-last"></div>
+            <li class="li-header" style="" ><a href="./yishang.html" target="blank">作品展示</a></li>
+            <li class="li-header-center" style="margin-left: 80px;float: left" > <a href="./index.html">design</a></a></li>
+            <li class="li-header" style="margin-left: 80px;float: left" ><a href="./connect.html" target="blank">联系方式</a></li>
+            <li class="li-header">
+                <div class="li-right li-header-last"></div>
             </li>
-        </ul>
-    </header>
+        </div>
+
+    </ul>
+</header>
+<body>
     <div class="show-center">
         作品展示
     </div>
@@ -401,7 +363,7 @@ a:hover{
                     <img id="show1"  src="./pic/bg-1-min.png" alt="">
                     <img class="show-msg"  src="./pic/1-min.png" alt="">
             </a>
-           
+
 
         </div>
         <div class="level-1-2-block">
@@ -411,7 +373,7 @@ a:hover{
             </a>
 
         </div>
-        
+
         <div class="level-1-3-block">
             <a href="./community.html">
                 <img  id="show3"  src="./pic/bg-3-min.png" alt="">
@@ -425,14 +387,14 @@ a:hover{
                         <img id="show4"  src="./pic/bg-4-min.png" alt="">
                         <img class="show2-1-msg"  src="./pic/4-min.png" alt="">
                 </a>
-               
+
             </div>
             <div class="level-2-2-block">
                 <a href="./icon.html">
                         <img id="show5"  src="./pic/bg-5-min.png" alt="">
                         <img class="show2-2-msg"  src="./pic/5-min.png" alt="">
                 </a>
-               
+
 
             </div>
     </div>
@@ -460,9 +422,9 @@ a:hover{
         <ul style="height:100%">
             <li class="show-skill" style="margin-left:0px">
                     <canvas id="ps">当前浏览器不支持canvas组件请升级！</canvas>
-                 
+
             </li>
-            
+
             <li class="show-skill"> <canvas id="ai">当前浏览器不支持canvas组件请升级！</canvas></li>
             <li class="show-skill"> <canvas id="sketch">当前浏览器不支持canvas组件请升级！</canvas></li>
             <li class="show-skill"> <canvas id="ae">当前浏览器不支持canvas组件请升级！</canvas></li>
@@ -489,11 +451,11 @@ a:hover{
                             在北京国华人寿项目组做UI设计师，负责国华以及其旗下公司乐享宝，一仟金融以及华瑞的小程序部分模块的需求升级和传统模块的迭代和在自平台，其他平台的产品详情图设计。
                             负责了国华官网整体的页面设计更新。
                     </p>
-                       
+
                         <p>
                                 后期负责易商阜极公司内部的erp页面设计，负责易商小课堂小程序以及响应式网页的全部设计，易商云网页的响应式改版。
-                        </p>  
-                        
+                        </p>
+
                 </div>
             </li>
             <li class="note-li" style="margin-top:0px;">
@@ -504,7 +466,7 @@ a:hover{
                     <div id="list-comtent-2" class="note-msg" style="height: 84px" >
                             我在公司任职UI设计师负责企业合作项目的视觉形象设计，其中涵盖公众号、微信小程序、网站以及APP界面等一系列的设计工作。设计项目有公众号营养餐、影吧系统、遴选自习室、小咖单车小程序、工程管理系统以及河北税务局公众号。
                             2017年后半年带实习生一起做项目并且给实习生做设计培训。
-                            
+
                     </div>
                 </li>
                 <li class="note-li" style="margin-top:0px;">
@@ -514,12 +476,12 @@ a:hover{
                         </div>
                         <div id="list-comtent-3" class="note-msg" style="height: 48px;">
                                 前期辅助UI设计组长整理页面切图以及标注。为公司招聘，宣传做海报，传单以及易拉宝的设计。慢慢负责整个模块的页面设计，后期负责香九龄app的整体的页面设计。
-                                
+
                         </div>
                     </li>
-           
+
     </ul>
-  
+
     <div class="connect"  >
         <div id="list4" style="text-align: center;width: 100%;height: 109px;">
                 <div style="text-align: center;width: 100%;height: 109px;width: 1200px;margin: 0 auto">
@@ -528,23 +490,23 @@ a:hover{
                                     <img style="height:25px;width: 25px;float: left;" src="./pic/dianhua01-min.png" alt="">
                                     <span style="line-height: 25px;display:block;float:left;margin-left: 2px">手机：13116138953</span>
                                 </div>
-                               
+
                         </div>
-        
+
                         <div style="border:solid 1px #E9E9E9; height:54px;float: left;line-height: 54px;margin-top: 32px"></div>
-        
+
                         <div style="float: left;text-align: center;height:29px;width: 598px;height: 109px;">
                                 <div style="width:332px;height:25px;margin: auto;line-height: 120px;margin-top: 43px;">
                                         <img style="height:25px;width: 25px;float: left;" src="./pic/dianhua01-min.png" alt="">
                                         <span style="line-height: 25px;display:block;float:left;margin-left: 2px">邮箱：13116138953@163.com</span>
                                     </div>
-                                   
+
                             </div>
-                      
+
                 </div>
         </div>
-       
-        
+
+
     </div>
 </body>
 </html>
@@ -603,8 +565,13 @@ function drawcircle(element,num){
         drawcircle("axure",0.78)
     }
     var runderflag=false;
-   
+
     $(window).scroll(function(){
+        var move=$(document).scrollTop()
+        if(move<40){
+            var h=40-move
+            $(".header-top").css("height",h+"px")
+        }
 
 　　//var ds = document.documetElement.scrollTop || document.body.scrollTop;　　//js兼容获取滚动条
 
@@ -630,19 +597,15 @@ function drawcircle(element,num){
                                     $("#list4").fadeIn(function(){
                                         $("#list4").animate({left:"+500"},"slow");
                                     })
-                                })  
+                                })
                             })
                         })
                     })
                 })
             })
-           
-        
-           
-            
     　　}
-       
-       
+
+
 
     });
  $(document).ready(function(){
@@ -662,7 +625,7 @@ function drawcircle(element,num){
     //         })
     //     }
     // );
-    
+
     // $("#addLineImg").mouseout(
     //     function(){
     //     }

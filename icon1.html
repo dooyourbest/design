@@ -9,8 +9,6 @@
 
 </head>
 <link rel="stylesheet" href="./all.css">
-<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-
 
 <style>
 html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
@@ -95,9 +93,6 @@ a:hover{
     width:1244px;
     /* height: 11370px; */
 }
-li img{
-    display: none;
-}
 </style>
 <body>
     <div class="show-all" style="padding-bottom:80px">
@@ -121,66 +116,38 @@ li img{
                  <div class="show-author">
                         icon
                  </div>
-                <ul  class="content" style="margin: 0 auto;margin-top:30px;margin-bottom:80px;width: 1242px;height: 330px">
-                  <li class="show1" style="height: 210px;width: 210px;float: left;margin-left: 0px">
-                      <img style="width: 210px;height: auto;" src="./pic/new-1.png" alt="">
-                  </li>
-                    <li class="show2" style="height: 210px;width: 210px;float: left;margin-left: 48px">
-                        <img style="width: 210px;height: auto;" src="./pic/new-2.png" alt="">
-                    </li>
-                    <li class="show3" style="height: 210px;width: 210px;float: left;margin-left: 48px">
-                        <img style="width: 210px;height: auto;" src="./pic/new-3.png" alt="">
-                    </li>
-                    <li class="show4" style="height: 210px;width: 210px;float: left;margin-left: 48px">
-                        <img style="width: 210px;height: auto;" src="./pic/new-4.png" alt="">
-                    </li>
-                    <li class="show5" style="height: 210px;width: 210px;float: left;margin-left: 48px">
-                        <img style="width: 210px;height: auto;" src="./pic/new-5.png" alt="">
-                    </li>
-
-                    <li class="show6" style="height: 210px;width: 210px;float: left;margin-left: 129px">
-                        <img style="width: 210px;height: auto;" src="./pic/new-6.png" alt="">
-                    </li>
-                    <li class="show7" style="height: 210px;width: 210px;float: left;margin-left: 48px">
-                        <img style="width: 210px;height: auto;" src="./pic/new-7.png" alt="">
-                    </li>
-                    <li class="show8" style="height: 210px;width: 210px;float: left;margin-left: 48px">
-                        <img style="width: 210px;height: auto;" src="./pic/new-8.png" alt="">
-                    </li>
-                    <li class="show9" style="height: 210px;width: 210px;float: left;margin-left: 48px">
-                        <img style="width: 210px;height: auto;" src="./pic/new-9.png" alt="">
+                <ul  class="content" style="margin-bottom:80px">
+                    <li class="show-li" style="margin-bottom:80px">
+                        <img style="width:1244px" src="./pic/作品展示-min.png" alt="">
                     </li>
 
                 </ul>
     </div>
+    <!-- <div class="connect"  >
+            <div style="">
+                    <div style="float: left;text-align: center;height:29px;width: 598px;height: 120px;">
+                        <div style="width:205px;height:29px;margin: auto;line-height: 120px;margin-top: 45px;">
+                                <img style="height:29px;width: 29px;float: left;" src="./pic/dianhua01-min.png" alt="">
+                                <span style="line-height: 29px;display:block;float:left;margin-left: 2px">手机：13116138953</span>
+                            </div>
 
+                    </div>
+
+                    <div style="border:solid 1px #E9E9E9; height:54px;float: left;line-height: 54px;margin-top: 32px"></div>
+
+                    <div style="float: left;text-align: center;height:29px;width: 598px;height: 120px;">
+                            <div style="width:265px;height:29px;margin: auto;line-height: 120px;margin-top: 45px;">
+                                    <img style="height:29px;width: 29px;float: left;" src="./pic/youxiang-4-min.png" alt="">
+                                    <span style="line-height: 29px;display:block;float:left;margin-left: 2px">邮箱：13116138953@163.com</span>
+                                </div>
+
+                        </div>
+
+            </div>
+
+        </div> -->
 
 
 
 </body>
-<script>
-    $(document).ready(function () {
-        var time=800
-        // $(".show1 img").show();
-        $(".show3 img").fadeIn(time,function(){
-            $(".show2 img").fadeIn(function(){
-                $(".show1 img").fadeIn(time,function () {
-                    $(".show9 img").fadeIn(time,function () {
-                        $(".show8 img").fadeIn(time)
-                    })
-                })
-            })
-            $(".show4 img").fadeIn(time,function(){
-                $(".show5 img").fadeIn(time,function () {
-                    $(".show6 img").fadeIn(time,function () {
-                        $(".show7 img").fadeIn(time)
-                    })
-                })
-            })
-
-        })
-
-    })
-
-</script>
 </html>
