@@ -220,7 +220,7 @@ body.impress-mouse-timeout {
   bottom: 1px;
   text-align: left;
   font-size: 10pt;
-  opacity: 0.6;
+  opacity: 0;
 }
 
 /* Help popup plugin */

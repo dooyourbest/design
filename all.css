@@ -1,0 +1,33 @@
+header{
+    height: 48px;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-ul{
+    margin-top: 60px;
+    margin: 0 auto;
+    height: 48px;
+    width: 1200px;
+    float: left;
+}
+.header-li{
+    float: left;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    font-family: zcoolwenyiti;
+    padding: 0px;
+    margin-left: 40px;
+    line-height: 48px;
+
+}
+.first-header-li{
+    font-family: zcoolwenyiti;
+    font-size: 48px;
+    color: #333333;
+    margin-left: 0px;
+}
+.underline{
+    border-bottom: 1px solid #333333;height:40px;
+}

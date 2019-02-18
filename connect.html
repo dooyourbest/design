@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<style>
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+body{
+    background-color: #F5F5F5 ;
+    height: 100%;
+}
+.li-header{
+    width:56px;
+    height:14ppx;
+    font-family: zcoolwenyiti;
+    font-size: 14px;
+    float:left;
+    margin-left: 80px;
+    line-height: 48px;
+    position: relative;
+}
+.li-header-last{
+    width:56px;
+    height:1px;
+    background: #333333;
+    border: 0px;
+    /* line-height: 48px; */
+    margin-top: 24px;
+}
+.li-header-center{
+    width:119px;
+    height:48px;
+    font-family: zcoolwenyiti;
+    font-size: 48px;
+    float:left;
+    margin-left: 80px;
+}
+header{
+    height:48px;
+    text-align: center;
+}
+.show-center{
+    /* width: 237px; */
+    padding: 0px;
+    height: 45px;
+    font-family: SourceSansPro-Regular;
+    font-size:36px;
+    margin:0 auto;
+    margin-top:100px;
+    text-align: center
+
+}
+.show-line{
+    border:#979797 solid 1px;
+    margin: 0 auto;
+    width: 130px;
+    margin-top:15px;
+}
+.show-author{
+    margin: 0 auto;
+    margin-top:15px;
+    font-size: PingFangSC-Regular;
+    /* width:199px; */
+    height: 22px;
+    text-align: center;
+    font-size: 16px;
+    color: #666666
+
+}
+.show-first{
+    height: 423px;
+    width:1270px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.level-1-1-block{
+    width:423px;
+    float: left;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    display: none;
+
+}
+.level-1-2-block{
+    width:423px;
+    float: left;
+    text-align: center;
+    position: relative;
+    display: none;
+
+
+}
+.level-1-3-block{
+    width:423px;
+    float: left;
+    text-align: center;
+    position: relative;
+    display: none;
+
+
+
+}
+.show-second{
+    position: relative;
+    height: 423px;
+    width:846px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-top: -50px;    
+
+}
+.level-2-1-block{
+    position: absolute;
+    width:423px;
+    text-align: center;
+    float: left;
+    display: none;
+    
+}
+.level-2-2-block{
+    position: absolute;
+    left: 423px;
+    width:423px;
+    float: left;
+    text-align: center;
+    display: none;
+
+
+}
+.line-hint{
+    margin:0 auto;
+    margin-top:120px;
+    width: 320px;
+    border: 1px solid #D8D8D8 
+}
+.energy{
+    width: 124px;
+    height: 40px;
+    font-family: PingFangSC-Regular;
+    color:#333333;
+    font-size:28px;
+    margin: 0 auto;
+    margin-top:18px;
+
+}
+.energy-en{
+    width: 100px;
+    height: 17px;
+    font-family: PingFangSC-Regular;
+    color:#666666;
+    font-size:12px;
+    margin: 0 auto;
+    margin-top:2px;
+
+}
+.skill{
+    margin: 0 auto;
+    margin-top:40px;
+    width: 1200px;
+    height: 180px;
+    line-height: 180px;
+}
+.show-skill{
+    float: left;
+    margin-left: 75px;
+    width: 180px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    color:#333333;
+    font-size:18px;
+    height: 180px;
+
+}
+.skill-msg{
+    margin: 0 auto;
+    margin-top:40px;
+    width: 1200px;
+    height: 25px;
+}
+.show-skill-msg{
+    float: left;
+    margin-left: 75px;
+    width: 180px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    color:#333333;
+    font-size:18px;
+    height: 25px;
+
+}
+#myCanvas{
+  margin: 0 auto;
+  display: block;
+}
+.show-me{
+    margin: 0 auto;
+    margin-top:30px;
+    height: 103px;
+    width: 1196px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+    color:#666666 ;
+    text-align: center
+
+}
+.connect{
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 1200px;
+    height: 128px;
+    background-color: #ffffff;
+    margin-bottom: 88px;
+    
+}
+
+span{
+    font-family:SourceSansPro-Regular;
+    font-size:18px;
+    color: #333333;
+}
+#show1{
+    width: auto;
+    height: 423px;
+    margin: auto;
+}
+
+#show2{
+    width: auto;
+    height: 423px;
+    margin: auto;
+
+}
+#show3{
+    width: auto;
+    height: 423px;
+    margin: auto;
+
+}
+#show4{
+    width: auto;
+    height: 423px;
+    margin: auto;
+
+}
+#show5{
+    width: auto;
+    height: 423px;
+    margin: auto;
+
+}
+.show-msg{
+    position:absolute;
+    width: 160px;
+    height: 160px;
+    left: 131px;
+    top: 131px;
+    /* display: none; */
+}
+.show2-1-msg{
+    position:absolute;
+    width: 160px;
+    height: 160px;
+    left: 131px;
+    top: 131px;
+}
+.show2-2-msg{
+    position:absolute;
+    width: 160px;
+    height: 160px;
+    right: 131px;
+    top: 131px;
+}
+.show-msg {
+        cursor: pointer;
+        transition: all 0.5s;
+}
+.show2-1-msg {
+        cursor: pointer;
+        transition: all 0.5s;
+}
+ .show2-2-msg {
+        cursor: pointer;
+        transition: all 0.5s;
+}
+.show-msg:hover{
+    transform: scale(1.1);
+}
+.show2-1-msg:hover{
+    transform: scale(1.1);
+}
+.show2-2-msg:hover{
+    transform: scale(1.1);
+}
+/* .show-msg{
+        cursor: pointer;
+        transition: all 1s;
+    }
+.show-msg:hover{
+    transform: scale(1.1);
+}
+
+.show-msg{
+        cursor: pointer;
+        transition: all 1s;
+    }
+.show2-1-msg:hover{
+    transform: scale(1.1);
+} */
+.center-msg{
+    width: 100%;
+    height: 160px;
+    /* background-color: red; */
+    position:absolute;
+    /* width: 160px; */
+    height: 160px;
+    left: 0 px;
+    top: 131px;
+    text-align: center
+}
+.center-msg-note{
+    display: block;
+    margin-top: 24px;
+    font-family: SourceSansPro-Regular;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+}
+.show-image{
+    width:64px;height: auto;margin: 0 auto;
+}
+a{
+    color:black;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: #ff9900 ;
+}
+</style>
+
+<body>
+    <div style="margin-top:40px;height: 60px;">
+    </div>
+    <header >
+        <ul style="text-align: center;width:663px;margin: 0 auto">
+            <li class="li-header" style="margin: 0px">
+                <div class="li-header-last"></div>
+            </li>
+            <li class="li-header"><a href="./yishang.html">作品展示</a></li>
+            <li class="li-header-center"> <a href="./index.html">design</a></a></li>
+            <li class="li-header"><a href="./connect.html">联系方式</a></li>
+            <li class="li-header" >
+                <div class="li-header-last"></div>
+            </li>
+        </ul>
+    </header>
+    <div class="show-center">
+       联系方式
+    </div>
+    <div class="show-line">
+
+    </div>
+    <div class="show-author">
+            Contact information
+    </div>
+    <div class="show-first">
+        <div class="level-1-1-block">
+            <img id="show1"  src="./pic/Polygon.png" alt="">
+            <div class="center-msg"> 
+                <div class="show-image">
+                        <img style="width:100%;height: 100%;"src="./pic/电话.png" alt="">
+                </div>
+                <span class="center-msg-note">13116138953</span>
+            </div>
+
+        </div>
+        <div class="level-1-2-block">
+            <img id="show2"  src="./pic/Polygon.png" alt="">
+            <div class="center-msg"> 
+                    <div class="show-image">
+                            <img style="width:100%;height: 100%;"src="./pic/tutuut.png" alt="">
+                    </div>
+                    <span class="center-msg-note">13116138953</span>
+                </div>
+    
+        </div>
+        
+        <div class="level-1-3-block">
+            <img  id="show3"  src="./pic/Polygon.png" alt="">
+            <div class="center-msg"> 
+                    <div class="show-image">
+                            <img style="width:100%;height: 100%;"src="./pic/email.png" alt="">
+                    </div>
+                    <span class="center-msg-note">13116138953@163.com</span>
+            </div>
+    
+        </div>
+    </div>
+<!--    
+    <div class="line-hint">
+
+    </div>
+    <div class="energy">
+        专业技能
+    </div>
+    <div class="energy-en">
+            Professional skills
+    </div>
+    <div class="skill">
+        <ul style="height:100%">
+            <li class="show-skill" style="margin-left:0px">
+                    <canvas id="ps">当前浏览器不支持canvas组件请升级！</canvas>
+                 
+            </li>
+            
+            <li class="show-skill"> <canvas id="ai">当前浏览器不支持canvas组件请升级！</canvas></li>
+            <li class="show-skill"> <canvas id="sketch">当前浏览器不支持canvas组件请升级！</canvas></li>
+            <li class="show-skill"> <canvas id="ae">当前浏览器不支持canvas组件请升级！</canvas></li>
+            <li class="show-skill"> <canvas id="axure">当前浏览器不支持canvas组件请升级！</canvas></li>
+        </ul>
+    </div> -->
+    <!-- <div class="skill-msg" style="margin-top:20px">
+        <ul style="height:100%">
+            <li class="show-skill-msg" style="margin-left:0px">Ps</li>
+            <li class="show-skill-msg">Ai</li>
+            <li class="show-skill-msg">Sketch</li>
+            <li class="show-skill-msg">Ae</li>
+            <li class="show-skill-msg">Axure</li>
+        </ul>
+    </div> -->
+    <!-- <div class="line-hint"></div>
+    <div class="energy">
+            联系方式
+    </div>
+    <div class="energy-en" style="width:112px;">
+            Contact information
+    </div>
+
+    <div class="show-me" >
+            从事互联网网产品和移动端产品设计3年以上工作经验，自己独立设计过9个以上的项目，精通Photoshop、Illustrator、sketch、After Effects等软件，熟练掌握APP、banner、海报和网页的设计技巧、有丰富的平面视觉设计及APP项目设计经验，对UI设计趋势有灵敏触觉和领悟能力，了解交互动效，并具备一定的动效制作能力，热爱设计，有团队精神。
+    </div>
+    <div class="connect"  >
+        <div style="">
+                <div style="float: left;text-align: center;height:29px;width: 598px;height: 120px;">
+                    <div style="width:205px;height:29px;margin: auto;line-height: 120px;margin-top: 45px;">
+                            <img style="height:29px;width: 29px;float: left;" src="./dianhua01.png" alt="">
+                            <span style="line-height: 29px;display:block;float:left;margin-left: 2px">手机：13116138953</span>
+                        </div>
+                       
+                </div>
+
+                <div style="border:solid 1px #E9E9E9; height:54px;float: left;line-height: 54px;margin-top: 32px"></div>
+
+                <div style="float: left;text-align: center;height:29px;width: 598px;height: 120px;">
+                        <div style="width:265px;height:29px;margin: auto;line-height: 120px;margin-top: 45px;">
+                                <img style="height:29px;width: 29px;float: left;" src="./youxiang-4.png" alt="">
+                                <span style="line-height: 29px;display:block;float:left;margin-left: 2px">邮箱：13116138953@163.com</span>
+                            </div>
+                           
+                    </div>
+              
+        </div>
+        
+    </div> -->
+</body>
+</html>
+<script>
+//方法一：arc 动态画圆
+
+if($(document).ready()){
+                $(".level-1-1-block").show("slow")
+                $(".level-1-2-block").show("slow")
+                $(".level-1-3-block").show("slow")
+                $(".level-2-1-block").show("slow")
+                $(".level-2-2-block").show("slow")
+                // $("#show2").show("slow")
+                // $("#show3").show("slow")
+                // $("#show4").show("slow")
+                // $("#show5").show("slow")
+                // $(".show-msg").show("slow")
+                
+        　　}
+    var runderflag=false;
+   
+    $(window).scroll(function(){
+
+　　//var ds = document.documetElement.scrollTop || document.body.scrollTop;　　//js兼容获取滚动条
+
+    　　if($(document).scrollTop() >0 && runderflag==false){
+            rundraw()
+            runderflag=true
+    　　}
+       
+       
+
+    });
+    // $("#show1").mouseover(
+    //     function(){
+    //         $("#show1").css({
+    //             "width": "auto",
+    //             "height": "450px",
+    //             "margin": "auto",
+    //             "opacity":"0.5"
+    //         })
+    //     }
+    // );
+    
+    // $("#addLineImg").mouseout(
+    //     function(){
+    //     }
+    // );
+</script>
