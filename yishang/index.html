@@ -7,13 +7,13 @@
   traditional presentation that looks like slides (square screens with bullet
   points...), again to make a first timer feel more at home. From this simple
   presentation you can then go on to more powerful impress.js presentations!
-  
+
   This example is hopefully helpful for people that want to create both
   simple and (eventually) awesome presentations in impress.js and comfortable
   doing that directly in HTML.
-  
-  By: @henrikingo (Still based on the HTML from bartaz' demo.)  
-    
+
+  By: @henrikingo (Still based on the HTML from bartaz' demo.)
+
 -->
 
 <html lang="en">
@@ -37,52 +37,62 @@
     <div id="overview" class="step overview" data-x="1350" data-y="100" data-z="100" data-scale="3" data-rotate-y="90">
          <h1>ChenYang Design Show</h1>
     </div>
-    <div id="overview2" class="step overview" data-x="2018" data-y="106" data-z="3018" data-scale="2">
-        <p>thanks for watching</p>
-        <p>姓名：陈阳</p>
-        <p>作品名称：易商小课堂</p>
-        <span style="font-size:16px">* 方向键控制展示</p>
-  
-        
-        
-    </div>
+    <!--<div id="overview2" class="step overview" data-x="2018" data-y="106" data-z="3018" data-scale="2">-->
+        <!--<p>thanks for watching</p>-->
+        <!--<p>姓名：陈阳</p>-->
+        <!--<p>作品名称：易商小课堂</p>-->
+        <!--<span style="font-size:16px">* 方向键控制展示</p>-->
+
+
+
+    <!--</div>-->
 
     <div id="step-1" class="step" data-x="0" data-y="0" data-z="0"
-         data-goto-prev="step-8" style="width:1080px">
-        <img id="img0" style="width:960px;margin: auto"  alt="">
+         data-goto-prev="step-10" style="width:1080px">
+        <img id="img0" style="width:100%;margin: auto"  alt="">
     </div>
 
     <div id="step-2" class="step" data-x="420"  style="width:1080px" data-y="-90" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
-        <img id="img1" style="width: 960px;"  alt="">
+        <img id="img1" style="width:100%;"  alt="">
     </div>
 
-    <div id="step-3" class="step" data-x="700" data-y="350" data-z="-350" data-rotate-z="90" data-rotate-y="-90" data-rotate-order="zyx">
-        <img id="img2" style="width: 960px;"  alt="">
+    <div id="step-3" class="step" data-x="-400" data-y="350" data-z="350" data-rotate-z="360" data-rotate-y="-90" data-rotate-order="zyx">
+        <img id="img2" style="width:100%;"   alt="">
     </div>
 
-    <div id="step-4" class="step" data-x="422" data-y="780" data-z="-250" data-rotate-z="135" data-rotate-y="-135" data-rotate-order="zyx">
-        
-        <img id="img3" style="width: 960px;"  alt="">
+    <div id="step-4" class="step" data-x="422" data-y="80" data-z="-250" data-rotate-z="135" data-rotate-y="-135" data-rotate-order="zyx">
+
+        <img id="img3" style="width:100%;"   alt="">
     </div>
 
     <div id="step-5" class="step" data-x="0" data-y="702" data-z="0" data-rotate-z="180" data-rotate-y="-180" data-rotate-order="zyx">
-        <img id="img4" style="width: 960px;"  alt="">
+        <img id="img4" style="width:100%;"   alt="">
 
     </div>
 
-    <div id="step-6" class="step" data-x="379" data-y="780" data-z="270" data-rotate-z="135" data-rotate-y="-225" data-rotate-order="zyx">
-        <img id="img5" style="width: 960px;"  alt="">
+    <div id="step-6" class="step" data-x="379" data-y="780" data-z="-270" data-rotate-z="135" data-rotate-y="-225" data-rotate-order="zyx">
+        <img id="img5" style="width:100%;"   alt="">
 
     </div>
 
     <div id="step-7" class="step" data-x="700" data-y="350" data-z="350" data-rotate-z="90" data-rotate-y="-270" data-rotate-order="zyx">
-        <img id="img6" style="width: 960px;"  alt="">
+        <img id="img6" style="width:100%;"   alt="">
 
     </div>
 
-    <div id="step-8" class="step" data-x="379" data-y="-70" data-z="270" data-rotate-z="45" data-rotate-y="-315" data-rotate-order="zyx"
-         data-goto-next="step-1">
-        <img id="img7" style="width: 960px;"  alt="">
+    <div id="step-8" class="step" data-x="-700" data-y="1200" data-z="270" data-rotate-z="45" data-rotate-y="-315" data-rotate-order="zyx"
+        >
+        <img id="img7" style="width:100%;"   alt="">
+
+    </div>
+    <div id="step-9" class="step" data-x="-880" data-y="-70" data-z="270" data-rotate-z="45" data-rotate-y="-315" data-rotate-order="zyx"
+         >
+        <img id="img8" style="width:100%;"   alt="">
+
+    </div>
+    <div id="step-10" class="step" data-x="0" data-y="-70" data-z="270" data-rotate-z="45" data-rotate-y="-315" data-rotate-order="zyx"
+        >
+        <img id="img9" style="width:100%;"   alt="">
 
     </div>
 </div>
@@ -95,14 +105,20 @@
 impress().init();
 var src = new Array();
 var img = new Image();
-src.push('./src/1.jpg');
-src.push('./src/2.jpg');
-src.push('./src/3-min.png');
-src.push('./src/4-min.png');
-src.push('./src/5-min.png');
-src.push('./src/6-min.png');
-src.push('./src/7-min.png');
-src.push('./src/8-min.png');
+// 10作品集结束致谢.jpg			4易商小课堂颜色-图标.jpg		8易商网站-个人中心.jpg
+// 1作品集首页.jpg				5易商小课堂多页面.jpg			9图标.jpg
+// 2个人介绍.jpg				6悦享生活多页面.jpg
+// 3易商小程序第一页.jpg			7悦享生活全部页面.jpg
+src.push('./src/1作品集首页.jpg');
+src.push('./src/2个人介绍.jpg');
+src.push('./src/3易商小程序第一页.jpg');
+src.push('./src/4易商小课堂颜色-图标.jpg');
+src.push('./src/5易商小课堂多页面.jpg');
+src.push('./src/6悦享生活多页面.jpg');
+src.push('./src/7悦享生活全部页面.jpg');
+src.push('./src/8易商网站-个人中心.jpg');
+src.push('./src/9图标.jpg');
+src.push('./src/10作品集结束致谢.jpg');
 function preload(src, index) {
   index = index || 0;
   if(index >= 10) {
