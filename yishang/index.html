@@ -25,7 +25,7 @@
     <link href="css/3D-rotations.css" rel="stylesheet" />
 </head>
 
-<body class="impress-not-supported">
+<body class="impress-not-supported" style="overflow:hidden">
 <div class="fallback-message">
     <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
@@ -48,11 +48,11 @@
     <!--</div>-->
 
     <div id="step-1" class="step" data-x="0" data-y="0" data-z="0"
-         data-goto-prev="step-10" style="width:1080px">
+         data-goto-prev="step-10" ">
         <img id="img0" style="width:100%;margin: auto"  alt="">
     </div>
 
-    <div id="step-2" class="step" data-x="420"  style="width:1080px" data-y="-90" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
+    <div id="step-2" class="step" data-x="420"   data-y="-90" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
         <img id="img1" style="width:100%;"  alt="">
     </div>
 
@@ -139,8 +139,8 @@ preload(src);
 
 </body>
 <style>
-.step{
+/* .step{
     width: 1080px;
-}
+} */
 </style>
 </html>
